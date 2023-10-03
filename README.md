@@ -1,6 +1,7 @@
 # Quiz Application
 
 This project is a simple quiz application where users can answer multiple-choice questions and get their total score at the end.
+This application is deployed at https://normalquiz.netlify.app/
 
 ## Table of Contents
 
