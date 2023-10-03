@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> 
+
+</head>
+<body>
+
+  <div id="quiz-container">    
+    <h1>Quiz</h1>
+    <p id="time-left">Time Left: </p><div id="timer"></div><p id="time-left"> seconds</p>
+    <form id="quiz-form">  
+      <div class="question">
+        <p id="question-text">1. What is the capital of France?</p>
+        <input type="radio" name="q1" value="a" id="q1a">
+        <label for="q1a">Paris</label><br>
+        <input type="radio" name="q1" value="b" id="q1b">
+        <label for="q1b">London</label><br>
+        <input type="radio" name="q1" value="c" id="q1c">
+        <label for="q1c">Berlin</label><br>
+        <input type="radio" name="q1" value="d" id="q1d">
+        <label for="q1d">Rome</label><br>
+        <br>
+      </div>
+      <div id="feedback-1"></div>
+
+      <div class="question">
+        <p id="question-text">2. What is the tallest mountain in the world?</p>
+        <input type="radio" name="q2" value="a" id="q2a">
+        <label for="q2a">Mount Everest</label><br>
+        <input type="radio" name="q2" value="b" id="q2b">
+        <label for="q2b">K2</label><br>
+        <input type="radio" name="q2" value="c" id="q2c">
+        <label for="q2c">Kangchenjunga</label><br>
+        <input type="radio" name="q2" value="d" id="q2d">
+        <label for="q2d">Lhotse</label><br>
+        <br>
+      </div>
+      <div id="feedback-2"></div>
+
+      <div class="question">
+        <p id="question-text">3. Which planet is known as the "Red Planet"?</p>
+        <input type="radio" name="q3" value="a" id="q3a">
+        <label for="q3a">Mars</label><br>
+        <input type="radio" name="q3" value="b" id="q3b">
+        <label for="q3b">Venus</label><br>
+        <input type="radio" name="q3" value="c" id="q3c">
+        <label for="q3c">Jupiter</label><br>
+        <input type="radio" name="q3" value="d" id="q3d">
+        <label for="q3d">Saturn</label><br>
+        <br>
+      </div>
+      <div id="feedback-3"></div>
+
+      <div class="question">
+        <p id="question-text">4. What is the largest ocean on Earth?</p>
+        <input type="radio" name="q4" value="a" id="q4a">
+        <label for="q4a">Pacific Ocean</label><br>
+        <input type="radio" name="q4" value="b" id="q4b">
+        <label for="q4b">Atlantic Ocean</label><br>
+        <input type="radio" name="q4" value="c" id="q4c">
+        <label for="q4c">Indian Ocean</label><br>
+        <input type="radio" name="q4" value="d" id="q4d">
+        <label for="q4d">Arctic Ocean</label><br>
+        <br>
+      </div>
+      <div id="feedback-4"></div>
+
+      <div class="question">
+        <p id="question-text">5. Who painted the Mona Lisa?</p>
+        <input type="radio" name="q5" value="a" id="q5a">
+        <label for="q5a">Leonardo da Vinci</label><br>
+        <input type="radio" name="q5" value="b" id="q5b">
+        <label for="q5b">Vincent van Gogh</label><br>
+        <input type="radio" name="q5" value="c" id="q5c">
+        <label for="q5c">Pablo Picasso</label><br>
+        <input type="radio" name="q5" value="d" id="q5d">
+        <label for="q5d">Michelangelo</label><br>
+        <br>
+      </div>
+      <div id="feedback-5"></div>
+
+      <!-- Add a "Next" button initially disabled -->
+      <button type="button" id="next-button" disabled>Next</button>
+
+
+      <!-- "Submit" button initially hidden -->
+      <button type="submit" id="submit-button" style="display: none;">Submit</button>
+    </form>
+
+    <button type="button" id="calculate-score-button" style="display: none;">Calculate Score</button>
+
+    <div id="score-modal" class="modal">      
+        <div class="modal-content">
+            <p id="score-text"></p>
+            <button class="close" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+
+</div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
