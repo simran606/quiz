@@ -43,7 +43,3 @@ Contributions to this project are welcome! Feel free to open issues or submit pu
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Replace `[project-name]`, `[description]`, `[installation]`, `[usage]`, `[contributing]`, and `[license]` with appropriate information specific to your project. Make sure to also include any necessary installation instructions, usage examples, and guidelines for contributing to the project.
